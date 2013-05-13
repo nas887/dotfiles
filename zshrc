@@ -18,6 +18,12 @@ chpwd() {
   ls -lrthG
 }
 
+EC2_KEY='/Users/Neil/.ssh/key'
+BNMAGENTO='/Library/WebServer/Documents/Bonobos'
+BNRAILS='/Users/Neil/Sites/web'
+CHEFDIR='/Users/Neil/Sites/chef'
+VAGRANT_LOG='debug'
+
 # Save a ton of history
 HISTSIZE=20000
 HISTFILE=~/.zsh_history
@@ -43,7 +49,7 @@ stty start undef
 stty stop undef
 
 # RVM 
-[[ -s "/Users/ben/.rvm/scripts/rvm" ]] && source "/Users/ben/.rvm/scripts/rvm"
+[[ -s "/Users/Neil/.rvm/scripts/rvm" ]] && source "/Users/Neil/.rvm/scripts/rvm"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -57,7 +63,7 @@ source $HOME/.dotfiles/zsh/aliases
 source $HOME/.dotfiles/zsh/functions
 
 # Customize to your needs...
-export PATH=bin:/Users/ben/.rvm/gems/ruby-1.9.2-p180/bin:/Users/ben/.rvm/gems/ruby-1.9.2-p180@global/bin:/Users/ben/.rvm/rubies/ruby-1.9.2-p180/bin:/Users/ben/.rvm/bin:~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
+export PATH=bin:/Users/Neil/.rvm/gems/ruby-1.9.2-p180/bin:/Users/Neil/.rvm/gems/ruby-1.9.2-p180@global/bin:/Users/Neil/.rvm/rubies/ruby-1.9.2-p180/bin:/Users/Neil/.rvm/bin:~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH=$PATH:/usr/texbin
