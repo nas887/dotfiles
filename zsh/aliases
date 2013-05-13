@@ -34,19 +34,3 @@ alias gst='git status'
 alias herkou='heroku'
 alias killruby='killall -9 ruby'
 alias killrudy='killall -9 ruby'
-alias -g M='| more'
-alias staging='git push heroku-staging master'
-alias sync='git add -u . && git commit -m "Minor changes. Commit message skipped." && repush'
-alias u='cd ..'
-alias v='vim'
-alias vi='vim'
-alias vu='cd ~/code/vim-university'
-alias y='cd ~/code/ybuy'
-
-# Heroku staging
-alias staging-console='heroku run console --remote staging'
-alias staging-tail='heroku logs --tail --remote staging'
-
-# Heroku production
-alias production-console='heroku run console --remote production'
-alias production-tail='heroku logs --tail --remote production'
