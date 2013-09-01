@@ -1,11 +1,11 @@
 # Handle the fact that this file will be used with multiple OSs
 alias asu="cd ~/code/rails/activesupport"
-alias aliases='vim ~/.dotfiles/bash/aliases'
+alias aliases='vim ~/dotfiles/bash/aliases'
 alias be='bundle exec'
 alias bi='bundle install'
 alias bu='bundle update'
 alias code='cd ~/code'
-alias d='cd ~/.dotfiles'
+alias d='cd ~/dotfiles'
 alias gad='git add .'
 alias gc='git commit'
 alias gca='git commit -a'
@@ -18,4 +18,9 @@ alias gd='git diff'
 alias grc='git rebase --continue'
 alias grake='rspec --drb spec/ && cucumber --drb features/'
 alias restart_apache="sudo /etc/init.d/apache2 restart"
-
+alias naturebox='cd /Applications/MAMP/htdocs/naturebox'
+alias mysql='/Applications/MAMP/Library/bin/mysql --host=localhost -uroot -proot'
+alias dropbox='cd ~/Dropbox'
+alias clearcache='rm -rf /Applications/MAMP/htdocs/naturebox/var/cache & rm -rf /Applications/MAMP/htdocs/naturebox/var/full_page_cache'
+alias nbox='cd /Applications/MAMP/htdocs/naturebox'
+alias gpod='git push origin develop'

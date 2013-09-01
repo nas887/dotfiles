@@ -1,8 +1,8 @@
 ###########
 # general #
 ###########
-export EDITOR="vim"
-
+export EDITOR="subl"
+export MAGENTO_ROOT="/Applications/MAMP/htdocs/naturebox/"
 # Autocorrect mispelled directories
 shopt -s cdspell
 
