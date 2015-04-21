@@ -1,2 +1,4 @@
-export PATH="~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:/usr/local/share/pear:$PATH"
+export PATH="~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:/usr/local/share/pear:/usr/local/share/npm/bin:$PATH"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
+export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
+export PATH="~/.composer/vendor/bin:$PATH"
