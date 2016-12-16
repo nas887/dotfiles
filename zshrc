@@ -13,16 +13,7 @@ setopt AUTO_PUSHD
 # Allow completing of the remainder of a command
 bindkey "^N" insert-last-word
 
-# Show contents of directory after cd-ing into it
-chpwd() {
-  ls -lrthG
-}
 
-EC2_KEY='/Users/Neil/.ssh/key'
-BNMAGENTO='/Library/WebServer/Documents/Bonobos'
-BNRAILS='/Users/Neil/Sites/web'
-CHEFDIR='/Users/Neil/Sites/chef'
-VAGRANT_LOG='debug'
 
 # Save a ton of history
 HISTSIZE=20000
@@ -63,9 +54,13 @@ source $HOME/.dotfiles/zsh/aliases
 source $HOME/.dotfiles/zsh/functions
 
 # Customize to your needs...
-export PATH=bin:/Users/Neil/.rvm/gems/ruby-1.9.2-p180/bin:/Users/Neil/.rvm/gems/ruby-1.9.2-p180@global/bin:/Users/Neil/.rvm/rubies/ruby-1.9.2-p180/bin:/Users/Neil/.rvm/bin:~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PAT=H$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export PATH="~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:/usr/local/share/pear:/usr/local/share/npm/bin:$PATH"
+export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
+export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
+export PATH="~/.composer/vendor/bin:$PATH"
+
 PATH=$PATH:/usr/texbin
 
 # Shaves about 0.5s off Rails boot time (when using perf patch). Taken from https://gist.github.com/1688857
