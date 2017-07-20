@@ -26,6 +26,14 @@ function rrg {
 bundle exec rake routes | grep $1
 }
 
+function kall {
+kill $(ps -e | grep $1 | awk '{print $1}')
+}
+
+function hlt {
+heroku logs -t --app staging-brightwheel --ps $1
+}
+
 #################
 #   git stuff   #
 #################
