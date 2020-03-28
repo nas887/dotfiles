@@ -1,8 +1,12 @@
 ###########
 # general #
 ###########
-export EDITOR="subl"
+export EDITOR="vim"
 export MAGENTO_ROOT="/Applications/MAMP/htdocs/naturebox/"
+export GOPATH="/Users/Neil/go/"
+export GOBIN="/Users/Neil/go/bin"
+export AWS_PROFILE="dev"
+
 # Autocorrect mispelled directories
 shopt -s cdspell
 
@@ -12,6 +16,8 @@ PROMPT_COMMAND='echo -ne "\033k\033\\"'
 # Disable flow control commands (keeps C-s from freezing everything)
 stty start undef
 stty stop undef
+
+eval "$(pyenv init -)"
 
 #################
 #  prompt stuff #
